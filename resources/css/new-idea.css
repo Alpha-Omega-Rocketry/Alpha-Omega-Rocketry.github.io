@@ -1,0 +1,121 @@
+/* latin */
+@font-face {
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/rajdhani/v10/LDI2apCSOBg7S-QT7pasEfOreec.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/rajdhani/v10/LDI2apCSOBg7S-QT7pbYF_Oreec.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+html{
+    background-image: url(../images/space.bmp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+nav, button, h1, p{
+    color: white;
+    
+}
+
+.container{
+    min-width: 250px;
+    color: white;
+    font-family: rajdhani;
+    position:absolute;
+    top: 0; bottom: 200px; left: 0; right: 0;
+    margin: auto;
+    height: max-content;
+    width: 60%;
+    
+}
+
+p{
+
+    min-width: 250px;
+    width: 50%;
+    margin: 3% auto;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 10px;
+    padding-top: 10px;
+}
+h1{
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+    min-width: 250px;
+    height: max-content;
+    border-top: 4px solid #BB1C05;
+    border-bottom: 4px solid #BB1C05;
+    margin: 0 auto;
+    font-weight: 600;
+    margin-bottom: 0%;
+    font-size: 35px;
+    letter-spacing: 10px;
+}
+button{
+    background-color: hsla(270, 10%, 10%, 0);
+    border: none;
+
+    text-align: center;
+    font-size: 17px;
+    margin: auto;
+    margin: 10px;
+    letter-spacing: 7px;
+    display: inline-block;
+    cursor: pointer;
+}
+button:hover{
+    color: #BB1C05;
+    transition-duration: .3s;
+}
+nav{
+    margin-top: 5%;
+    text-align: center;
+ 
+    margin: 0 auto;
+}
+.alpha-icon{
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10px;
+    width: 75px;
+    align-items: center; 
+}
+
+.logo{
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    margin-bottom: 5px;
+}
+.discord, .facebook, .instagram{
+    border-radius: 100px;
+}
+.lower-icon{
+    margin: 0 3px;
+    display: block;
+    float: right;
+}
+.lower-icon:hover{
+    border: 2px solid #BB1C05;
+    border-radius: 5px;
+    transition-duration: .1s;
+}
+*{
+    box-sizing: border-box;
+}
+

@@ -23,6 +23,7 @@ button, h1{
 
 .top{
     background-image: url(../images/sky.bmp);
+ 
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
