@@ -1,0 +1,156 @@
+/* latin */
+@font-face {
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/rajdhani/v10/LDI2apCSOBg7S-QT7pasEfOreec.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Coda Caption';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/codacaption/v14/ieVm2YRII2GMY7SyXSoDRiQGqcxKwPWe.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/rajdhani/v10/LDI2apCSOBg7S-QT7pbYF_Oreec.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+.top{
+    background-image: url(../images/space.bmp) ;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
+    background-repeat: no-repeat;
+    
+}
+
+
+
+img{
+    border-radius: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+h1{
+   
+    text-align: center;
+    min-width: 280px;
+    font-family: Rajdhani;
+    font-size: 50px;
+    width: 25%;
+    margin: auto auto;
+    margin-top: 100px;
+    color: white;
+	border-top: 4px solid #BB1C05;
+    border-bottom: 4px solid #BB1C05;
+    
+    
+}
+
+/*dropdown css content*/
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #060505;
+    width: max-content;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a{
+    color: #BB1C05;
+    display: block;
+    border-radius: 5px;
+    text-decoration: none; 
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.drop-button{
+    background-color: #060505;
+    margin: 5px 0px 5px 5px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor:pointer;
+    text-decoration: none;
+    border: none;
+    color: #BB1C05;
+}
+
+.drop-button:hover{
+    border-bottom: 3px solid #BB1C05;
+    transition-duration: .5s;
+}
+
+.anchor{
+    margin: 7px;
+}
+
+.anchor:hover{
+    transition-duration: .1s;
+}
+/*nav positining*/
+.all-nav{
+    position: relative;
+    width: 100%;
+}
+.buttons-nav{
+
+    margin-left: 10px;
+    min-width: 250px;
+    width: 25%;
+    position: relative;
+   display: inline;
+    
+}
+.nav-button{
+    border: none;
+   height: max-content;
+    position: relative;
+    margin: 0px auto;
+    font-size: 20px;
+    background-color: hsla(270, 20%, 20%, 0);
+    color: white;
+}
+.arrow{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 48%;
+    border:solid white;
+    border-width: 0 3px 3px 0;
+    border-radius: 3px;
+    transform: rotate(45deg);
+    margin: 13px;
+    transition-duration: .2s;
+   
+}
+.arrow:hover{
+    transform: rotate(405deg);
+}
+/*content*/
+*{
+    box-sizing: border-box;
+    
+}
+article{
+    min-height: 100vh;
+}

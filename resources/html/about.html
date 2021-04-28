@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <head>
     <title>About</title>
-    <link href="../css/new.css" rel="stylesheet" type="text/css">
+    <link href="../css/about.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="../images/icon.bmp" type="image/gif" sizes="16x16">
 </head>
 <html>
     <body>
-        <div class="top">
-            <img src="../images/icon.bmp" height="50px" width="50px">
-            <nav>
+        
+       <div class="top">
+            <nav class="all-nav">
+                <img src="../images/icon.bmp" height="50px" width="50px">
+                <nav class="buttons-nav">
                 <a href="../../index.html"><button class="nav-button">Home</button></a>
                 <a href="./about.html"><button class="nav-button">About</button></a>
                 <div class="dropdown"> 
@@ -21,10 +23,16 @@
                 </div>
                 <a href="./contact.html"><button class="nav-button">Contact</button></a>
             </nav>
+            </nav>
+            <aside class="style">
+                <button class="change">test</button>
+               
+            </aside>
             <h1>This is my story</h1>
+            <a href="#h2"><section class="arrow"></section></a> 
             </div>
             <article>
-                <h2>Jacob: Founder and President </h2>
+                <h2 id="h2">This is Jacob: Founder and President </h2>
                 <p class="content">I have always been intrigued by space and the vastness of it. I had always
                     enjoyed reading about the moon landings and shuttle launches. As a Christian
                     it boggled my mind that anyone could think it came about randomly. I 
@@ -45,5 +53,7 @@
                     The first and current project is Thrust Vectoring.  You can help me 
                     achieve my dream! Check out Patreon and support the fun!</p>
             </article>
+           
     </body>
+    <script src="../../test.js"></script>
 </html>

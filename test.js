@@ -1,0 +1,1 @@
+document.getElementsByClassName("change").style.color = "red"
