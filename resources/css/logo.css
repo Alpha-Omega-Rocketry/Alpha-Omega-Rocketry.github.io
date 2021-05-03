@@ -1,0 +1,14 @@
+
+.lower-icon{
+    margin: 0 3px;
+    display: block;
+    float: right;
+}
+.facebook, .discord, .instagram{
+    border-radius: 100px;
+}
+.lower-icon:hover{
+    border: 2px solid #BB1C05;
+    border-radius: 5px;
+    transition-duration: .1s;
+}

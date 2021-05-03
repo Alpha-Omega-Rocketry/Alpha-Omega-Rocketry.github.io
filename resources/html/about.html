@@ -2,6 +2,8 @@
 <head>
     <title>About</title>
     <link href="../css/about.css" rel="stylesheet" type="text/css">
+    <link href="../css/nav.css" rel="stylesheet" type="text/css">
+    <link href="../css/logo.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="../images/icon.bmp" type="image/gif" sizes="16x16">
 </head>
@@ -10,30 +12,32 @@
         
        <div class="top">
             <nav class="all-nav">
-                <img src="../images/icon.bmp" height="50px" width="50px">
+               
                 <nav class="buttons-nav">
-                <a href="../../index.html"><button class="nav-button">Home</button></a>
-                <a href="./about.html"><button class="nav-button">About</button></a>
+                <a href="../../index.html"><button class="nav-button" id="nav-button1">Home</button></a>
+                <a href="./about.html"><button class="nav-button" id="nav-button2">About</button></a>
                 <div class="dropdown"> 
-                    <a href="./projects.html"><button class="nav-button">Projects</button></a>
+                    <a href="./projects.html"><button class="nav-button" id="nav-button3">Projects</button></a>
                     <div class="dropdown-content">
-                        <a class="anchor" href="../html/thrust.html"><button class="drop-button"> vector control</button></a>
-                        <a class="anchor" href="../html/computers.html"><button class="drop-button"> Flight Computers</button></a>
+                        <a class="anchor" id="anchor1" href="../html/thrust.html"><button class="drop-button" id="drop-button1"> vector control</button></a>
+                        <a class="anchor" id="anchor2" href="../html/computers.html"><button class="drop-button" id="drop-button2"> Flight Computers</button></a>
                     </div>
                 </div>
-                <a href="./contact.html"><button class="nav-button">Contact</button></a>
-            </nav>
-            </nav>
-            <aside class="style">
-                <button class="change">test</button>
+                <a href="./contact.html"><button class="nav-button" id="nav-button4" >Contact</button></a>
+                <button id="change" class="nav-button">Dark Mode</button>
                
-            </aside>
-            <h1>This is my story</h1>
-            <a href="#h2"><section class="arrow"></section></a> 
+            </nav>
+            </nav>
+           
+            <section class="title">
+            <img class="img" id="img" src="../images/icon.bmp" height="75px" width="75px">
+            <h1 id="h1">This is my story</h1>
+            </section>
+            <a href="#h2"><section class="arrow" id="arrow"></section></a> 
             </div>
             <article>
                 <h2 id="h2">This is Jacob: Founder and President </h2>
-                <p class="content">I have always been intrigued by space and the vastness of it. I had always
+                <p class="content" id="p">   I have always been intrigued by space and the vastness of it. I had always
                     enjoyed reading about the moon landings and shuttle launches. As a Christian
                     it boggled my mind that anyone could think it came about randomly. I 
                     saw space as something which attested to God's power!
@@ -53,6 +57,14 @@
                     The first and current project is Thrust Vectoring.  You can help me 
                     achieve my dream! Check out Patreon and support the fun!</p>
             </article>
+            <section class="logo"> 
+                <a href="https://www.facebook.com/AlphaRocketry" target="_blank"><img class="facebook lower-icon" id="icon1" src="../images/facebook.bmp" height="40px" width="40px" alt="" > </a>
+                <a href="https://www.instagram.com/alpha_omega_rocketry/" target="_blank"><img class="instagram lower-icon" id="icon2" src="../images/instagram.bmp" height="40px" width="40px" alt=""></a>
+                <a href="https://discord.gg/KpFabC3ndQ" target="_blank"><img class="discord lower-icon" id="icon3" src="../images/discord.bmp" height="40px" width="40px" alt=""></a>
+                <a href="https://www.patreon.com/alphaomegarocketry" target="_blank"><img class="parton lower-icon" id="icon4" src="../images/patron.png" height="40px" width="40px" alt=""></a>
+                <a href="https://twitter.com/AlphaRocketry" target="_blank"><img class="twitter lower-icon" id="icon5" src="../images/twitter.png" height="40px" width="40px" alt=""></a>
+                <a href="https://www.youtube.com/channel/UC-ZQ2ue9k0Avz8GRihZUtMw" target="_blank"><img class="youtube lower-icon" id="icon6" src="../images/youtube.png" height="40px" width="50px" alt=""></a>
+            </section>
            
     </body>
     <script src="../../test.js"></script>
