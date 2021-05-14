@@ -1,0 +1,48 @@
+*{
+  
+    box-sizing: border-box;
+}
+#h4{
+   
+    text-align: center;
+    width: min-content;
+    padding-top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 44px;
+    color: #BB1C05;
+}
+.block-buttons{
+   
+    border: 2px solid #BB1C05;
+    margin: 10% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 50%;
+    min-width: 250px;
+    display: block;
+    position: relative;
+    transition-duration: .7s;
+    border-radius: 5px;
+}
+.block-buttons:hover{
+    box-shadow: 3px 3px 20px gray;
+    
+}
+a{
+    text-decoration: none;
+}
+.tvc{
+   
+    background-image: url(../images/tvc.bmp);
+}
+.computers{
+    
+    background-image: url(../images/computer.bmp);
+    margin-bottom: 100px;
+}
+#p{
+    width: 100%;
+}
