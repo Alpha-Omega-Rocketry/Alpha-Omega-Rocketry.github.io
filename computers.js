@@ -18,7 +18,7 @@ let dark = function(){
     for(let i = 0; i < color.length; i ++){
         document.getElementById(color[i]).style.color = "gray"
     }
-    document.getElementById("change").innerHTML = "regular";
+    document.getElementById("change").innerHTML = "Regular";
     
     document.querySelector("body").style.backgroundColor = "#121212";
     document.getElementById("drop-button1").style.color = "#660094";

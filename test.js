@@ -1,67 +1,36 @@
-
+let border = ["arrow", 'h2', 'p', 'icon1', 'icon2', 'icon3', 'icon4', 'icon5', 'icon6', 'h1']
+let textColor = ['h1', 'h2', 'p', 'nav-button1', 'nav-button2', 'nav-button3', 'nav-button4', 'change', 'drop-button1', 'drop-button2']
 let light = function(){
-    document.getElementById("h1").style.color = "";
-    document.getElementById("change").innerHTML = "Dark Mode";
-    document.getElementById("h2").style.color = "";
-    document.getElementById("p").style.color = "";
     document.querySelector("body").style.backgroundColor = "";
-    document.getElementById("arrow").style.borderColor = "";
-    document.getElementById("h2").style.borderColor = "";
-    document.getElementById("p").style.borderColor = "";
-    document.getElementById("nav-button1").style.color = "";
-    document.getElementById("nav-button2").style.color = "";
-    document.getElementById("nav-button3").style.color = "";
-    document.getElementById("nav-button4").style.color = "";
-    document.getElementById("change").style.color = "";
-    document.getElementById("h1").style.borderColor = ""
-    document.getElementById("icon1").style.borderColor = "";
-    document.getElementById("icon2").style.borderColor = "";
-    document.getElementById("icon3").style.borderColor = "";
-    document.getElementById("icon4").style.borderColor = "";
-    document.getElementById("icon5").style.borderColor = "";
-    document.getElementById("icon6").style.borderColor = "";
-    document.getElementById("drop-button1").style.color = "";
-    document.getElementById("drop-button2").style.color = "";
+    document.getElementById("change").innerHTML = "Dark Mode";
+    border.forEach(function(borderElement) {document.getElementById(borderElement).style.borderColor = ""})
+    textColor.forEach(function(textColorElement) {document.getElementById(textColorElement).style.color = ""}) 
 }
 let dark = function(){
-    document.getElementById("h1").style.color = "gray";
-    document.getElementById("change").innerHTML = "regular";
-    document.getElementById("h2").style.color = "gray";
-    document.getElementById("p").style.color = "gray";
     document.querySelector("body").style.backgroundColor = "#121212";
-    document.getElementById("arrow").style.borderColor = "#660094";
-    document.getElementById("h2").style.borderColor = "#660094";
-    document.getElementById("p").style.borderColor = "#660094";
-    document.getElementById("nav-button1").style.color = "gray";
-    document.getElementById("nav-button2").style.color = "gray";
-    document.getElementById("nav-button3").style.color = "gray";
-    document.getElementById("nav-button4").style.color = "gray";
-    document.getElementById("change").style.color = "gray";
-    document.getElementById("h1").style.borderColor = "#660094"
-    document.getElementById("icon1").style.borderColor = "#660094";
-    document.getElementById("icon2").style.borderColor = "#660094";
-    document.getElementById("icon3").style.borderColor = "#660094";
-    document.getElementById("icon4").style.borderColor = "#660094";
-    document.getElementById("icon5").style.borderColor = "#660094";
-    document.getElementById("icon6").style.borderColor = "#660094";
-    document.getElementById("drop-button1").style.color = "#660094";
-    document.getElementById("drop-button2").style.color = "#660094";
-   
+    document.getElementById("change").innerHTML = "Regular";
+    border.forEach(function(borderElement) {document.getElementById(borderElement).style.borderColor = "#660094"})
+    textColor.forEach(function(textColorElement) {document.getElementById(textColorElement).style.color = "gray"})   
 }
 
 let style = document.getElementById("change");
 if(localStorage.getItem("dark") === "true"){
     document.getElementById("gameBox").style.display = "block";
-        dark();
+    dark();
 }
-if(localStorage.getItem("dark") === "false"){
+if(localStorage.getItem("dark") === "false" || localStorage.getItem("dark") === null){
     light();
     
     document.getElementById("gameBox").style.display = "none";
     window.localStorage.setItem("dark", "false");
         document.getElementById("change").innerHTML = "Dark Mode";
 }
+/*
+if(localStorage.getItem("dark") === null){
+    document.getElementById("gameBox").style.display = "none";
+}
 
+*/
 
 function decision(){
 
@@ -77,8 +46,30 @@ function decision(){
     }
     
 }
-style.onclick = decision;/*
+style.onclick = decision;
+/*
+let lines = ["rotate1", 'rotate2', 'rotate3', 'rotate4', 'rotate5', 'rotate6', 'rotate7', 'rotate8', 'rotate9', 'rotate10']
+function  hoover(event) {
+    event.target.style.borderColor = "#660094";
+    event.target.style.transform = 'rotate(90deg)';
+}
+function  reset(event) {
+    event.target.style.borderColor = "";
+    event.target.style.transform = 'rotate(0deg)';
+}
+function assignment(box) {
+    box.onmousedown = function () {
+        hoover(event);
+    }
+    box.onmouseup = function(){
+        reset(test);
+    }
+}
+lines.forEach(assignment)
+*/
+/*
 let innerRotate = document.getElementById("insideRotate")*/
+
 let rotate1 = document.getElementById("rotate1");
 let rotate2 = document.getElementById("rotate2");
 let rotate3 = document.getElementById("rotate3");
@@ -233,4 +224,5 @@ rotate3.addEventListener("mouseover", rotateDecision3);
 rotate1.addEventListener("mouseover", rotateDecision1);
 rotate2.addEventListener("mouseover", rotateDecision2);/*
 innerRotate.addEventListener("mouseover", innerRotateDecision);*/
+
 

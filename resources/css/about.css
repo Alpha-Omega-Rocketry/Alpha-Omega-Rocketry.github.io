@@ -40,6 +40,7 @@
     
 }
 
+
 .img{
     border-radius: 100px;
     display: block;
@@ -83,7 +84,7 @@
 
 
 h1{
-    
+    padding: 2% 0%;
    font-weight: 600;
     text-align: center;
     min-width: 250px;
@@ -185,8 +186,6 @@ h1{
     transform: rotate(45deg);
     margin: 13px;
     transition-duration: .15s;
-   
-   
 }
 .arrow:hover{
     transform: rotate(405deg);
@@ -205,6 +204,7 @@ article{
     margin: 0 auto;
 }
 p{
+    padding: 2%;
     font-size: 25px;
     font-family: 'Fira Sans' ;
     line-height: 1.5;
@@ -212,6 +212,7 @@ p{
     border-radius: 5px;
 }
 h2{
+    padding: 1%;
     border-radius: 5px;
     width: 60%;
     max-width: 240px;

@@ -29,6 +29,7 @@ a:hover{
     margin-top: 55px;
 }
 .tvc-heading{
+    padding: 2%;
     border: 2px solid #BB1C05;
     border-radius: 5px;
     text-align: center;
