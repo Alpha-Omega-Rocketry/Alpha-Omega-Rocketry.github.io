@@ -1,8 +1,10 @@
 let border = ["arrow", 'h2', 'p', 'icon1', 'icon2', 'icon3', 'icon4', 'icon5', 'icon6', 'h1']
-let textColor = ['h1', 'h2', 'p', 'nav-button1', 'nav-button2', 'nav-button3', 'nav-button4', 'change', 'drop-button1', 'drop-button2']
+let textColor = ['h1', 'h2', 'p', 'nav-button1', 'nav-button2', 'nav-button3', 'nav-button4', 'change']
 let light = function(){
     document.querySelector("body").style.backgroundColor = "";
     document.getElementById("change").innerHTML = "Dark Mode";
+    document.getElementById("drop-button1").style.color = "";
+    document.getElementById("drop-button2").style.color = "";
     border.forEach(function(borderElement) {document.getElementById(borderElement).style.borderColor = ""})
     textColor.forEach(function(textColorElement) {document.getElementById(textColorElement).style.color = ""}) 
 }
@@ -11,6 +13,8 @@ let dark = function(){
     document.getElementById("change").innerHTML = "Regular";
     border.forEach(function(borderElement) {document.getElementById(borderElement).style.borderColor = "#660094"})
     textColor.forEach(function(textColorElement) {document.getElementById(textColorElement).style.color = "gray"})   
+    document.getElementById("drop-button1").style.color = "#660094";
+    document.getElementById("drop-button2").style.color = "#660094";
 }
 
 let style = document.getElementById("change");
